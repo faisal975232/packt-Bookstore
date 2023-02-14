@@ -25,7 +25,7 @@ email->john@gmail.com
 pass-> 123456
 
 
-You can hit /api/call_api (get api) to fetch data from the fakerapi . Although an sql file is also provided for more books data .
+You can hit backendurl/api/call_api (get api) to fetch data from the fakerapi . Although an sql file is also provided for more books data .
 
 You are good to go.
 
