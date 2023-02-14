@@ -13,31 +13,31 @@ class BooksController extends Controller
 {
     public function callapi()
     {
-        // $httpClient = new \GuzzleHttp\Client();
-        // $request =
-        //     $httpClient
-        //     ->get("https://fakerapi.it/api/v1/books?_quantity=150");
+        $httpClient = new \GuzzleHttp\Client();
+        $request =
+            $httpClient
+            ->get("https://fakerapi.it/api/v1/books?_quantity=150");
 
-        // $response = json_decode($request->getBody()->getContents());
+        $response = json_decode($request->getBody()->getContents());
 
-        // $data = $response->data;
+        $data = $response->data;
 
-        // foreach ($data as $key => $value) {
-        //     $insert = DB::table('books')->insert([
-        //         'title' => $value->title,
-        //         'author' => $value->author,
-        //         'genre' => $value->genre,
-        //         'description' => $value->description,
-        //         'isbn' => $value->isbn,
-        //         'image' => $value->image,
-        //         'published' => $value->published,
-        //         'publisher' => $value->publisher,
-        //     ]);
-        // }
+        foreach ($data as $key => $value) {
+            $insert = DB::table('books')->insert([
+                'title' => $value->title,
+                'author' => $value->author,
+                'genre' => $value->genre,
+                'description' => $value->description,
+                'isbn' => $value->isbn,
+                'image' => $value->image,
+                'published' => $value->published,
+                'publisher' => $value->publisher,
+            ]);
+        }
 
-        // return 'done';
+        return 'Data Fetched Successfully';
 
-        return Books::all();
+        
     }
 
     public function allBooks(Request $request)
