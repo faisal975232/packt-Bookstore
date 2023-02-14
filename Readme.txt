@@ -18,9 +18,10 @@ Admin credentials
 email->john@gmail.com
 pass-> 123456
 
+You can hit /api/call_api (get api) to fetch data from the fakerapi . Although an sql file is also provided for more books data .
+
 You are good to go.
 
-Migration has few book entries although a sql file is also provided for 100 plus book data .
 
 Auth Apis
 | Type| Url|Param|
