@@ -13,9 +13,6 @@ Run-> php artisan migrate
 Run-> Php artisan db::seed
 
 
-php artisan db:seed --class=BookSeeder --force
-php artisan db:seed --class=AdminUserSeeder --force 
-
 Admin credentials
 
 email->john@gmail.com
