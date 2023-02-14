@@ -19,10 +19,11 @@ Run-> Php artisan serve
 
 Under frontend folder run npm start. and here you go ..
 
+Frontend admin route -> /login
 Admin credentials
-
 email->john@gmail.com
 pass-> 123456
+
 
 You can hit /api/call_api (get api) to fetch data from the fakerapi . Although an sql file is also provided for more books data .
 
