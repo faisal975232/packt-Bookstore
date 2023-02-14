@@ -7,11 +7,17 @@ Create a database by name Laravel.
 
 
 Laravel Backend
+rename .env.example to .env in backend folder
 
 Run-> php artisan migrate
 
 Run-> Php artisan db::seed
 
+Run->php artisan key:generate
+
+Run-> Php artisan serve
+
+Under frontend folder run npm start. and here you go ..
 
 Admin credentials
 
