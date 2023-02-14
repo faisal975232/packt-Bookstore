@@ -7,23 +7,28 @@ Create a database by name Laravel.
 
 
 Laravel Backend
+rename .env.example to .env in backend folder
 
 Run-> php artisan migrate
 
 Run-> Php artisan db::seed
 
+Run->php artisan key:generate
 
-php artisan db:seed --class=BookSeeder --force
-php artisan db:seed --class=AdminUserSeeder --force 
+Run-> Php artisan serve
 
+Under frontend folder run npm start. and here you go ..
+
+Frontend admin route -> /login
 Admin credentials
-
 email->john@gmail.com
 pass-> 123456
 
+
+You can hit backendurl/api/call_api (get api) to fetch data from the fakerapi . Although an sql file is also provided for more books data .
+
 You are good to go.
 
-Migration has few book entries although a sql file is also provided for 100 plus book data .
 
 Auth Apis
 | Type| Url|Param|
